@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: rgb(226, 191, 191);
+    font-family: 'Source Code Pro';
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    
+}
+
+.sidebar nav ul li {
+    margin: 15px 0;
+}
+
+.sidebar nav ul li a {
+    color: green;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.sidebar nav ul li a:hover {
+    color: #66ff66; 
+}
+
+main {
+    margin-left: 250px;
+    padding: 20px;
+    width: 100% ;
+}
+
+.hero {
+    background-image: url(''); 
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+    box-shadow: 5px 4px 20px #66ff66;
+    transition: 0.5s ease-in-out;
+    font-family: "Source Code Pro";
+    
+}
+.hero:hover{
+    letter-spacing: 0.1cm;
+    color:#66ff66;
+    transform: translateY(-5px);
+    
+
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .10em; /* Adjust as needed */
+    animation: 
+      typing 4s steps(30, end),
+      blink-caret 1s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+
+.hero p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: auto;
+}
+
+.card {
+    background-color: rgba(0, 255, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    transition:  0.3s;
+    box-shadow :0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 5px 4px 20px rgb(142, 12, 12);
+    text-underline-offset: 5px;
+}
+
+h2 {
+    border-bottom: 1px solid #008000;
+    padding-bottom: 10px;
+    margin: 20px 0;
+}
+
+h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    background-color: rgba(0,0,0,0.6);
+    color: #88ff00;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-weight: lighter;
+}
+/* Styles for the Download Resume button in hero */
+.download-btn {
+    padding: 8px 20px;
+    color: #ffffff;
+    background-color: #344c34;
+    border: none;
+    border-radius: 5px;
+    font-weight: lighter;
+    font-family: "Source Code Pro";
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.5s;
+    box-shadow: 0px 4px 10px rgba(102, 255, 102, 0.4);
+    margin-top: 25px;
+    margin-bottom: -50px;
+}
+
+/* Styling for sidebar link icons */
+.sidebar nav ul li a i {
+    margin-right: 2px; /* Space between icon and text */
+    color: #2b732b; /* Matches your theme color */
+    font-size: 1.1em; /* Adjust icon size as needed */
+    vertical-align: middle;
+}
+
+
+
+
+.download-btn:hover {
+    background-color: #202520;
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 15px rgba(159, 31, 31, 0.6);
+}
+#personal-info i {
+    margin-right: 8px;
+    color: #47b447; /* Matches the green theme */
+    font-size: 1.2em;
+    vertical-align: middle;
+}
